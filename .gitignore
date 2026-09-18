@@ -10,3 +10,8 @@ node_modules/
 *.db-journal
 
 .DS_Store
+/generated/prisma
+
+.agents
+.claude
+.windsurf

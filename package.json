@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "start": "node index.js",
+    "dev": "nodemon",
+    "postinstall": "prisma skills sync || exit 0"
   },
   "keywords": [],
   "author": "",
@@ -19,6 +21,7 @@
   },
   "type": "module",
   "dependencies": {
+    "@prisma/adapter-better-sqlite3": "^7.10.0",
     "@prisma/client": "^7.10.0",
     "bcrypt": "^6.0.0",
     "dotenv": "^17.4.2",
@@ -28,7 +31,9 @@
     "multer": "^2.4.0"
   },
   "devDependencies": {
+    "@types/better-sqlite3": "^9.6.0",
+    "@types/node": "^26.6.1",
     "nodemon": "^3.1.14",
-    "prisma": "8.0.0-rc.15"
+    "prisma": "7.10.0"
   }
 }
