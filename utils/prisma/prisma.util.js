@@ -1,6 +1,5 @@
 import "dotenv/config"
-
-import { PrismaClient } from "../../prisma/generated/prisma/client"
+import { PrismaClient } from "../../prisma/generated/prisma/client.js"
 import { PrismaBetterSqlite3 } from "@prisma/adapter-better-sqlite3"
 
 const adapter = new PrismaBetterSqlite3({
@@ -10,5 +9,6 @@ const adapter = new PrismaBetterSqlite3({
 const prisma = new PrismaClient({
   adapter,
 })
+
 
 export { prisma }
