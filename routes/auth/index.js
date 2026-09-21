@@ -3,7 +3,7 @@ import validator from "express-validator"
 import { checkValidation } from "../../middleware/checkValidation.middleware.js"
 import { prisma } from "../../utils/prisma/prisma.util.js"
 import { customError } from "../../utils/errorHandler.js"
-import { hashPassword } from "../../utils/hashPassword.js"
+import { hashPassword, comparePassword  } from "../../utils/hashPassword.js"
 import { createJwtToken } from "../../utils/jwtHelper.js"
 const authRouter = express.Router()
 
