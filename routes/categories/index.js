@@ -33,7 +33,6 @@ categoryRouter.get("/:id",
         return response.json({
             success: true,
             data: category,
-            message: "category fetched successfully"
         })
     }
 )

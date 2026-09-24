@@ -18,7 +18,6 @@ const checkAuthentication = (request, response, next) => {
 
     request.user = verifiedToken
 
-    console.log(verifiedToken)
 
     next()
 }

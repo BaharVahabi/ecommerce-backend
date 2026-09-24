@@ -33,7 +33,6 @@ favoriteRouter.post(
         const userId = request.user.id
         const productId = request.params.id
 
-        console.log("productId:", productId)
 
         const product = await prisma.product.findUnique({
             where: {
